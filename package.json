@@ -1,17 +1,18 @@
 {
   "name": "subtr",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "Unofficial api for turcealtazi.org",
+  "keyword": "subtitle, subtr, subtitletr",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/wisecolt/subTR.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "wisecolt",
+  "license": "MIT",
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "nodemon": "^1.17.5",
     "request": "^2.87.0",
-    "util": "^0.11.0"
   }
 }
