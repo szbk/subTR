@@ -1,6 +1,6 @@
 {
   "name": "subtr",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Unofficial api for turcealtazi.org",
   "keyword": "subtitle, subtr, subtitletr",
   "main": "index.js",
