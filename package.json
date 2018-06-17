@@ -2,13 +2,16 @@
   "name": "subtr",
   "version": "0.1.1",
   "description": "Unofficial api for turcealtazi.org",
-  "keyword": "subtitle, subtr, subtitletr",
+  "keywords": [
+    "subtitle",
+    "api",
+    "subtitletr"
+  ],
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/wisecolt/subTR.git"
   },
-  "homepage": "https:/github.com/wisecolt/subTR",
   "author": "wisecolt",
   "license": "MIT",
   "dependencies": {
@@ -17,5 +20,6 @@
   },
   "devDependencies": {
     "nodemon": "^1.17.5"
-  }
+  },
+  "homepage": "https://github.com/wisecolt/subtr"
 }
