@@ -1,6 +1,9 @@
-const getSubDetailsJSON = require('./index');
+const SubtitleDetailJSON = require('./index');
 
-getSubDetailsJSON('Vikings', 2013, (err, res)=>{
+SubtitleDetailJSON({
+  nameOrImdb: 'The.End.Of.The.F***ing.World',
+  year: 2017
+},(err, res)=>{
   if(err){
     console.log(err);
   }
