@@ -1,13 +1,11 @@
 const cheerio = require('cheerio')
 const request = require('request')
 
-
 /**
 * @method getSubDetailsJSON
 * @desc turkcealtyazi.org subtitle gets
 * @param {string} nameOrImdb name or imdb number (require)
 * @param {year} year Yıl yazılmalı, eğer imdb id ye göre aranacaksa yıl 0 verilmeli
-
 * @returns {function} result async
 */
 
