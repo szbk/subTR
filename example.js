@@ -1,4 +1,4 @@
-const getSubDetailsJSON = require('./subtr');
+const getSubDetailsJSON = require('./index');
 
 getSubDetailsJSON('Vikings', 2013, (err, res)=>{
   if(err){
