@@ -1,26 +1,33 @@
 {
   "name": "subtr",
-  "version": "0.1.1",
-  "description": "Unofficial api for turcealtazi.org",
+  "version": "1.0.0",
+  "description": "Unofficial API for turkcealtyazi.org — Türkçe altyazı arama ve indirme",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "scripts": {
+    "test": "node test/test.js"
+  },
   "keywords": [
     "subtitle",
+    "altyazi",
+    "turkcealtyazi",
+    "turkish",
     "api",
-    "subtitletr"
+    "scraper"
   ],
-  "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/wisecolt/subTR.git"
+    "url": "git://github.com/szbk/subTR.git"
   },
   "author": "wisecolt",
   "license": "MIT",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.2",
-    "lodash": "^4.17.10",
-    "request": "^2.87.0"
+    "cheerio": "^1.0.0-rc.12"
   },
-  "devDependencies": {
-    "nodemon": "^1.17.5"
-  },
-  "homepage": "https://github.com/wisecolt/subtr"
+  "engines": {
+    "node": ">=18"
+  }
 }
