@@ -1,12 +1,16 @@
 {
   "name": "subtr",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Unofficial API for turkcealtyazi.org — Türkçe altyazı arama ve indirme",
   "type": "module",
   "main": "index.js",
   "exports": {
     ".": "./index.js"
   },
+  "files": [
+    "index.js",
+    "lib/"
+  ],
   "scripts": {
     "test": "node test/test.js"
   },

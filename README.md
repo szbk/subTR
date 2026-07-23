@@ -73,6 +73,8 @@ ZIP'ten SRT çıkarılır, ISO-8859-9 (Windows-1254) encoding UTF-8'e çevrilir.
 - ✅ HTTPS (HTTP yönlendirmesi otomatik takip)
 - ✅ Windows-1254 (ISO-8859-9) → UTF-8 encoding dönüşümü
 - ✅ Social share link filtreleme (site içi /mov/ linklerini ayırt eder)
+- ✅ Yıl bazlı doğru film seçimi (aynı isimli filmler arasında yıl ile daraltma)
+- ✅ Tam slug eşleştirme ("obsession" ≠ "a-teachers-obsession")
 
 ## Test
 
@@ -87,6 +89,7 @@ npm test
 | Inception (2010) | 54 sonuç | ✅ | ✅ |
 | The Walking Dead (2010) | 201 sonuç (sezon/bölüm) | ✅ | ✅ |
 | Mission Impossible: Final Reckoning (2025) | 47 sonuç | ✅ | ✅ |
+| Obsession (2025) | 2 sonuç (yıl bazlı doğru film) | ✅ | ✅ |
 | I Love Boosters (2026) | 0 (altyazı yok, doğru) | — | — |
 | Olmayan film | 0 (crash yok) | — | — |
 
@@ -111,7 +114,11 @@ Benim talihim Amerika'da döndü.
 search({ name, year })
   │
   ├─ 1. GET find.php?find={name}+{year}&cat=sub
-  ├─ 2. HTML'den /mov/ veya /dizi/ linkini bul (social linkleri filtrele)
+  ├─ 2. HTML'den /mov/ veya /dizi/ linkini bul:
+  │     • Social share linkleri filtrele (facebook/google/twitter)
+  │     • Tam slug eşleşmesi (obsession ≠ a-teachers-obsession)
+  │     • Yıl ile daraltma (2025 belirten link tercih edilir)
+  │     • En yüksek ID'li film (yeni çıkanlar) seçilir
   ├─ 3. Film/dizi sayfasını çek
   └─ 4. #altyazilar satırlarını parse et (.underline, .flagtr, .alfps, .ripdiv)
        → indirme sayısına göre sıralı JSON dizisi
