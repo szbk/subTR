@@ -2,7 +2,7 @@
 
 **turkcealtyazi.org** için unofficial API — Türkçe altyazı arama ve indirme.
 
-Modern, Promise, ES Modules. Node 18+ native `fetch` kullanır (deprecated `request` paketi yok).
+Modern,Promise,ES Modules. Node 18+ native `fetch` kullanır (deprecated `request` paketi yok).
 
 ## Kurulum
 
